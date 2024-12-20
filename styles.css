@@ -1,0 +1,64 @@
+/* Alternative Upload Options Section */
+.alternative-options {
+    margin: 30px 0;
+    text-align: left;
+  }
+  
+  .alternative-options h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #4CAF50;
+  }
+  
+  /* Options Wrapper */
+  .options {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Individual Option */
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 15px;
+    background: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .option:hover {
+    background: #4CAF50;
+    border-color: #4CAF50;
+    color: #fff;
+  }
+  
+  .option i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+    transition: color 0.3s ease;
+  }
+  
+  .option span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Hover Effect */
+  .option:hover i {
+    color: #fff;
+  }
+  
+  .option:hover span {
+    color: #fff;
+  }
+  

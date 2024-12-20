@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olympic Timer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #f3f4f6, #cfd8dc);
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .time-sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .time-section {
+      flex: 1 1 calc(20% - 10px); /* Adjust width for 5 items */
+      min-width: 120px; /* Ensure each section has a minimum width */
+      background: #ecf0f1;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .time-section h2 {
+      font-size: 1.2em;
+      color: #34495e;
+      margin-bottom: 10px;
+    }
+
+    .time-section p {
+      font-size: 1em;
+      color: #2c3e50;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #7f8c8d;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Olympic Timer</h1>
+  <div class="container">
+    <h2>Event Date: Fri, 14 Jul, 2028</h2>
+    <div class="time-sections">
+      <div class="time-section">
+        <h2>Live Time</h2>
+        <p id="roots"></p>
+      </div>
+      <div class="time-section">
+        <h2>Month</h2>
+        <p id="month"></p>
+      </div>
+      <div class="time-section">
+        <h2>Week</h2>
+        <p id="week"></p>
+      </div>
+      <div class="time-section">
+        <h2>Days</h2>
+        <p id="days"></p>
+      </div>
+      <div class="time-section">
+        <h2>Minutes</h2>
+        <p id="minutes"></p>
+      </div>
+      <div class="time-section">
+        <h2>Seconds</h2>
+        <p id="seconds"></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">Created with ❤️ for live time tracking.</div>
+  <script src="script.js"></script>
+</body>
+
+</html>
